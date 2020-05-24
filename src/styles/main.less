@@ -1,0 +1,62 @@
+@import "color.less";
+@import "../components/email-input.less";
+@import "../components/tag.less";
+
+* {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+
+.heading {
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
+  position: absolute;
+  line-height: 1.68rem;
+  top: 2rem;
+  span {
+    font-weight: bold;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 98vh;
+}
+.form-container {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  background-color: @form-bg;
+
+  .input-container {
+    width: 33.75rem;
+    height: 12.75rem;
+    padding: 5.25rem 3.125rem 1.5rem 3.125rem;
+    position: relative;
+  }
+
+  .action-container {
+    padding: 1.5rem 3.125rem 2rem 3.125rem;
+    background-color: @bg-white;
+
+    .btn {
+      background-color: @btn-primary;
+      border: none;
+      border-radius: 0.37rem;
+      color: @bg-white;
+      text-align: center;
+      padding: 0.5rem 1rem;
+      font-size: 0.87rem;
+      cursor: pointer;
+      outline: none; // assuming accessibility is not required for this demo;
+      &:first-child {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
